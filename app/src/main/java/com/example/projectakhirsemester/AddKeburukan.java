@@ -84,7 +84,7 @@ public class AddKeburukan extends AppCompatActivity {
                                 etJudul.setText("");
 //                                etTanggal.setText("");
 
-                                Toast.makeText(AddKeburukan.this, "Data Berhasil Ditambahkan", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(AddKeburukan.this, "Tobat", Toast.LENGTH_SHORT).show();
                             }
                         }
                 );
