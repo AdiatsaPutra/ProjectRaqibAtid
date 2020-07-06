@@ -64,7 +64,7 @@ public class ReadKesalahan extends AppCompatActivity {
         if (database != null) {
             database.child("Data").child(request.getKey()).removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
                 public void onSuccess(Void aVoid) {
-                    Toast.makeText(ReadKesalahan.this, "Data Telah Terhapus", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ReadKesalahan.this, "Tobat", Toast.LENGTH_LONG).show();
                 }
             });
 
