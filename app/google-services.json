@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "33071233896",
+    "firebase_url": "https://projectakhirsemester-4f93a.firebaseio.com",
+    "project_id": "projectakhirsemester-4f93a",
+    "storage_bucket": "projectakhirsemester-4f93a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33071233896:android:d75559392740d6c864b4dd",
+        "android_client_info": {
+          "package_name": "com.example.projectakhirsemester"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33071233896-5vpucbjcq2r7gu04docusrq3hbku5skm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projectakhirsemester",
+            "certificate_hash": "6f68560ca685d7417009ce2ea3a8692c6915ef83"
+          }
+        },
+        {
+          "client_id": "33071233896-s527jjqjigq87mm3bpkeicqbg9efv145.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ0F9OXVV1LT9T9rILR8f2-8QlmT_C4fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33071233896-s527jjqjigq87mm3bpkeicqbg9efv145.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

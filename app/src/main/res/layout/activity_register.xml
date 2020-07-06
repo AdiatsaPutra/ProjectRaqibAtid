@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="400dp"
+        android:src="@drawable/header"
+        android:scaleY="1.5"
+        android:scaleX="1.1"
+        ></ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleY="1.3"
+        android:scaleX="1.3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="300dp"
+        android:scaleType="center"
+        android:src="@drawable/bgro"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="32dp"
+        android:text="Assalamu'alaikum, Selamat Datang Sahabat"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="270dp"
+        android:text="DAFTAR"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24dp"
+        android:textStyle="bold"></TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="310dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtEmailRegister"
+            android:inputType="textEmailAddress"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:hint="Email"
+            android:textSize="24dp"
+
+
+            ></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="390dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPasswordRegister"
+            android:inputType="textPassword"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:hint="Password"
+            android:textSize="24dp"
+
+
+            ></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="105dp"
+        android:background="@drawable/button"
+        android:text="DAFTAR"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>
