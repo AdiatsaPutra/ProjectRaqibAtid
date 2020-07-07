@@ -31,20 +31,20 @@ public class AddKeburukan extends AppCompatActivity {
 
         etJudul = findViewById(R.id.judulKesalahan);
         etKeterangan = findViewById(R.id.keteranganKesalahan);
-//        etTanggal = findViewById(R.id.tanggalKesalahan);
+       etTanggal = findViewById(R.id.tanggalKesalahan);
 
         Button tambahKesalahan = findViewById(R.id.tambahKesalahan);
         final Request request = (Request) getIntent().getSerializableExtra("DataKesalahan");
         if (request != null) {
             etJudul.setText(request.getJudul());
             etKeterangan.setText(request.getKeterangan());
-//            etTanggal.setText(request.getTanggal());
+           etTanggal.setText(request.getTanggal());
             tambahKesalahan.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     request.setJudul(etJudul.getText().toString());
                     request.setKeterangan(etKeterangan.getText().toString());
-//                    request.setTanggal(etTanggal.getText().toString());
+                   request.setTanggal(etTanggal.getText().toString());
 
                     updateBarang(request);
                 }
@@ -56,11 +56,11 @@ public class AddKeburukan extends AppCompatActivity {
                 public void onClick(View v) {
                     if (!(etJudul.getText().toString().isEmpty()) &&
                             !(etKeterangan.getText().toString().isEmpty()
-//                                    && !(etTanggal.getText().toString().isEmpty())
+                                   && !(etTanggal.getText().toString().isEmpty())
                             ))
                         submitUser(new Request(etJudul.getText().toString(),
                                 etKeterangan.getText().toString()
-//                                , etTanggal.getText().toString()
+                               , etTanggal.getText().toString()
                         ));
                     else
                         Toast.makeText(getApplicationContext(), "Data Tidak Boleh Kosong", Toast.LENGTH_LONG).show();
@@ -82,7 +82,7 @@ public class AddKeburukan extends AppCompatActivity {
                             public void onSuccess(Void aVoid) {
                                 etJudul.setText("");
                                 etJudul.setText("");
-//                                etTanggal.setText("");
+                               etTanggal.setText("");
 
                                 Toast.makeText(AddKeburukan.this, "Tobat", Toast.LENGTH_SHORT).show();
                             }
@@ -103,7 +103,7 @@ public class AddKeburukan extends AppCompatActivity {
                             public void onSuccess(Void aVoid) {
                                 etJudul.setText("");
                                 etJudul.setText("");
-//                                etTanggal.setText("");
+                               etTanggal.setText("");
 
                                 Toast.makeText(AddKeburukan.this, "Data Berhasil Diupdate!", Toast.LENGTH_SHORT).show();
                             }
