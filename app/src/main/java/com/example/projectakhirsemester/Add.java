@@ -38,20 +38,20 @@ public class Add extends AppCompatActivity {
 
         etJudul = findViewById(R.id.judulKebaikan);
         etKeterangan = findViewById(R.id.keteranganKebaikan);
-//        etTanggal = findViewById(R.id.tanggalKebaikan);
+       etTanggal = findViewById(R.id.tanggalKebaikan);
 
         Button tambahKebaikan = findViewById(R.id.tambahKebaikan);
         final Request request = (Request) getIntent().getSerializableExtra("Data");
         if (request != null) {
             etJudul.setText(request.getJudul());
             etKeterangan.setText(request.getKeterangan());
-//            etTanggal.setText(request.getTanggal());
+           etTanggal.setText(request.getTanggal());
             tambahKebaikan.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     request.setJudul(etJudul.getText().toString());
                     request.setKeterangan(etKeterangan.getText().toString());
-//                    request.setTanggal(etTanggal.getText().toString());
+                   request.setTanggal(etTanggal.getText().toString());
 
                     updateBarang(request);
                 }
@@ -63,11 +63,11 @@ public class Add extends AppCompatActivity {
                 public void onClick(View v) {
                     if (!(etJudul.getText().toString().isEmpty()) &&
                             !(etKeterangan.getText().toString().isEmpty()
-//                                    && !(etTanggal.getText().toString().isEmpty())
+                                   && !(etTanggal.getText().toString().isEmpty())
                             ))
                         submitUser(new Request(etJudul.getText().toString(),
                                 etKeterangan.getText().toString()
-//                                , etTanggal.getText().toString()
+                               , etTanggal.getText().toString()
                         ));
                     else
                         Toast.makeText(getApplicationContext(), "Data Tidak Boleh Kosong", Toast.LENGTH_LONG).show();
@@ -89,7 +89,7 @@ public class Add extends AppCompatActivity {
                             public void onSuccess(Void aVoid) {
                                 etJudul.setText("");
                                 etJudul.setText("");
-//                                etTanggal.setText("");
+                               etTanggal.setText("");
 
                                 Toast.makeText(Add.this, "Data Berhasil Ditambahkan", Toast.LENGTH_SHORT).show();
                             }
@@ -110,7 +110,7 @@ public class Add extends AppCompatActivity {
                             public void onSuccess(Void aVoid) {
                                 etJudul.setText("");
                                 etJudul.setText("");
-//                                etTanggal.setText("");
+                               etTanggal.setText("");
 
                                 Toast.makeText(Add.this, "Data Berhasil Diupdate!", Toast.LENGTH_SHORT).show();
                             }
